@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(243, 151, 238);
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0,1);
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .back-button {
+           background-color: slategrey;
+            }
+
+        .submit-button {
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Application Fee</h1>
+        <p>Payment is due 3 days prior to the start of the class</p><br>
+        <form>
+            <h2>Payment Method</h2>
+            <div class="payment-method">
+                
+                <label>
+                    <input type="radio" name="payment" value="credit-card"> Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="mail-check"> Mail a Check
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="in-person"> In-person at school
+                </label>
+            </div>
+            <div class="buttons">
+                <a href="indexs.html">
+                    <button type="button" class="back-button">Back</button>
+                </a>
+                <button type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

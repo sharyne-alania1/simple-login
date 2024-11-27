@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(243, 151, 238);
+            font-family: Arial, sans-serif;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: white;
+            width: 100%;
+            max-width: 800px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0,1);
+        }
+
+        h1 {
+            text-align: center;
+            color: seagreen;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h6 {
+            text-align: center;
+            font-size: 18px;
+            color: seagreen;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, select {
+           width: 100%;
+           padding: 12px;
+           margin-top: 8px;
+           border-radius: 5px;
+           border: 1px solid #ccc;
+           background-color: #f9f9f9;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .back-button {
+           background-color: slategrey;
+            }
+
+        .next-button {
+            background-color: slategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>COLLEGE ADMISSION FORM</h1>
+        <h6>Enter your admisson information below</h6><br><br>
+
+        <form id="enrollmentForm">
+                <label for="name">Name</label>
+            <div class="form-group1"> 
+                <input type="text" id="firstName" placeholder="Firstname">
+                <input type="text" id="middleName" placeholder="Middlename">
+                <input type="text" id="lastName" placeholder="Lastname"><br><br>
+            </div>
+            <label for="birth-date">Birthdate</label>
+            <div class="form-group1">
+               
+                <select id="month">
+                    <option>Please select a month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <select id="day">
+                    <option>Please select a day</option>
+                   
+                    <script>
+                        for (let i = 1; i <= 31; i++) {
+                            document.write(<option>${i}</option>);
+                        }
+                    </script>
+                </select>
+                <select id="year">
+                    <option>Please select a year</option><br><br>
+                    
+                    <script>
+                        for (let i = 2023; i >= 1900; i--) {
+                            document.write(<option>${i}</option>);
+                        }
+                    </script>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+            </div>
+            <div class="form-group">
+                <label for="citizenship">Which country are you a citizen?</label>
+                <select id="citizenship">
+                    <option>Please Select</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>UK</option>
+                    <option>Philippines</option>
+                    <option>Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="0000-000-0000" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">E-mail Address</label>
+                <input type="email" id="email" placeholder="myname@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mailing">Mailing Address</label>
+                <input type="text" id="mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="street">Street Address</label>
+                <input type="text" id="street" required>
+            </div>
+
+            <label for="street">Street Address Line 2</label>
+            <div class="form-group1"> 
+                <input type="text" id="city" placeholder="City">
+                <input type="text" id="province" placeholder="Province">
+            </div>
+            <input type="text" id="postal" placeholder="Postal / Zip Code"><br><br>
+
+            <label for="emergency">Emergency Contact</label>
+            <div class="form-group1"> 
+                <input type="text" id="firstName" placeholder="Firstname">
+                <input type="text" id="lastName" placeholder="Lastname"><br><br>
+            </div>
+            
+            <div class="form-group"> 
+                <label for="relationship">Relationship</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Do you  speak any languages other than English?</label>
+                <label><input type="radio" name="gender" value="male"> Yes</label>
+                <label><input type="radio" name="gender" value="female"> No</label>
+            </div><br>
+
+            <div class="buttons">
+                <a href="indexs.html">
+                <button type="button" class="back-button">Back</button>
+            </a>
+                <a href="index.html">
+                <button type="button" class="next-button">Next</button>
+            </a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
